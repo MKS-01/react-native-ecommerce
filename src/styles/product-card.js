@@ -10,7 +10,7 @@ export const CardContainer = styled.View`
 `;
 
 export const ImageView = styled.Image`
-  height: ${scaleSize(150)}px;
+  height: ${scaleSize(100)}px;
   width: 100%;
 `;
 

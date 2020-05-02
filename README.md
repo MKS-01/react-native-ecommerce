@@ -35,3 +35,7 @@ https://reactnative.dev/docs/running-on-device
 Follow React-Native-CLI QuickStart
 
 https://reactnative.dev/docs/getting-started
+
+## CSS - Styled-component
+
+https://styled-components.com/
