@@ -2,18 +2,14 @@ import React from 'react';
 import {RootSafeAreaView, RootView, RootScrollView} from '_styles/RootView';
 import {
   Title,
-  ProductContainer,
   Container,
   CategoryContainer,
   CategoryCard,
   ImageView,
 } from '_styles/homeScreen';
-import ProductCard from '_components/product-card';
 import ScrollProductList from '_components/scrollProductList';
-import Product from '_components/product';
 import {useNavigation} from '@react-navigation/native';
 
-import {Text, View} from 'react-native';
 const home = () => {
   return (
     <RootSafeAreaView>
