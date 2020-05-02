@@ -7,7 +7,7 @@ import {
   CategoryCard,
   ImageView,
 } from '_styles/homeScreen';
-import ScrollProductList from '_components/scrollProductList';
+import Carousel from '_components/carousel';
 import {useNavigation} from '@react-navigation/native';
 
 const home = () => {
@@ -16,7 +16,7 @@ const home = () => {
       <RootScrollView>
         <RootView>
           <Container>
-            <ScrollProductList />
+            <Carousel />
           </Container>
           <Container>
             <Title>Category</Title>

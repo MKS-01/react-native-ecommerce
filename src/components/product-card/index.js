@@ -6,10 +6,15 @@ import {
   BuyButton,
   BuyButtonText,
 } from '_styles/product-card';
+import {useNavigation} from '@react-navigation/native';
 
 const ProductCard = () => {
+  const navigation = useNavigation();
   return (
-    <CardContainer>
+    <CardContainer
+      onPress={() => {
+        navigation.navigate('ProductDetails');
+      }}>
       <ImageView
         source={require('_assets/images/shoes.jpg')}
         resizeMode="cover"
