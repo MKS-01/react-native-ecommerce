@@ -43,3 +43,5 @@ https://styled-components.com/
 ### React-Navigation
 
 https://reactnavigation.org/
+
+Authentication flows https://reactnavigation.org/docs/auth-flow/
