@@ -45,3 +45,7 @@ https://styled-components.com/
 https://reactnavigation.org/
 
 Authentication flows https://reactnavigation.org/docs/auth-flow/
+
+### How I structure the project?
+
+https://cheesecakelabs.com/blog/efficient-way-structure-react-native-projects/
