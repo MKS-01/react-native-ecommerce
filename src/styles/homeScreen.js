@@ -13,3 +13,7 @@ export const ProductContainer = styled.View`
   justify-content: space-between;
   margin-bottom: ${scaleSize(15)}px;
 `;
+
+export const Container = styled.View`
+  margin-bottom: ${scaleSize(20)}px;
+`;

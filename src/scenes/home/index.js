@@ -1,31 +1,27 @@
 import React from 'react';
-import {View, Text, FlatList} from 'react-native';
-import {RootSafeAreaView, RootView} from '_styles/RootView';
-import {Title, ProductContainer} from '_styles/homeScreen';
+import {RootSafeAreaView, RootView, RootScrollView} from '_styles/RootView';
+import {Title, ProductContainer, Container} from '_styles/homeScreen';
 import ProductCard from '_components/product-card';
+import ScrollProductList from '_components/scrollProductList';
 const home = () => {
   return (
     <RootSafeAreaView>
-      <RootView>
-        <Title>Product Title</Title>
-        <ProductList />
-        <ProductList />
-      </RootView>
+      <RootScrollView>
+        <RootView>
+          <Container>
+            <Title>Product Title</Title>
+            <ScrollProductList />
+          </Container>
+          <Container>
+            <Title>Product Title</Title>
+            <ProductList />
+            <ProductList />
+          </Container>
+        </RootView>
+      </RootScrollView>
     </RootSafeAreaView>
   );
 };
-
-// function Product() {
-//   return (
-//     <CardContainer>
-//       <ImageView
-//         source={require('_assets/images/shoes.jpg')}
-//         resizeMode="contain"
-//       />
-//       <Text>Shoes</Text>
-//     </CardContainer>
-//   );
-// }
 
 const ProductList = () => {
   return (
