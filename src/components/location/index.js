@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text} from 'react-native';
 import {Container, LocationText, TextView} from '_styles/location';
 import Icon from 'react-native-vector-icons/Entypo';
 import {scaleFont} from '_styles/mixins';
+import {API_KEY} from 'react-native-dotenv';
 
 import GetLocation from 'react-native-get-location';
 
@@ -17,7 +17,8 @@ async function geoCoding(lat, long) {
         lat +
         ',' +
         long +
-        '&key=AIzaSyCud3MQ-YpiRXuF29rrHnPdULNwqdHiU_c',
+        '&key=' +
+        API_KEY,
     );
     let json = await response.json();
     return json.results;
