@@ -3,7 +3,7 @@ import {scaleSize} from './mixins';
 import {TITLE_FONT_SIZE} from './typography';
 
 export const Title = styled.Text`
-  font-size: ${TITLE_FONT_SIZE};
+  font-size: ${TITLE_FONT_SIZE}px;
   font-weight: bold;
   line-height: ${scaleSize(40)}px;
 `;

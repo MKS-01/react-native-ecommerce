@@ -16,8 +16,8 @@ export const ItemContainer = styled.View`
 export const ImageView = styled.Image`
   height: ${scaleSize(80)}px;
   width: ${scaleSize(80)}px;
-  border: 1px solid #ede8df;
-  border-radius: ${scaleSize(40)}px;
+  border-radius: ${scaleSize(80)}px;
+  background-color: #fafafa;
   margin: ${scaleSize(10)}px;
 `;
 

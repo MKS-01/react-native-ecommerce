@@ -19,11 +19,7 @@ export const AuthContext = createContext();
 export const useAuthValue = () => useContext(AuthContext);
 
 function SplashScreen() {
-  return (
-    <View>
-      <Text>loading..</Text>
-    </View>
-  );
+  return <View />;
 }
 
 export default function App({}) {
