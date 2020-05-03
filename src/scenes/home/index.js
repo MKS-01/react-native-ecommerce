@@ -9,10 +9,9 @@ import {
 } from '_styles/homeScreen';
 import Carousel from '_components/carousel';
 import {useNavigation} from '@react-navigation/native';
-import GetCurrentLocation from '_utils/GeoLocation';
 import CurrentLocation from '_components/location';
+// import GetCurrentLocation from '_utils/GeoLocation';
 
-GetCurrentLocation();
 const home = () => {
   return (
     <RootSafeAreaView>

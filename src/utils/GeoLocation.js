@@ -7,6 +7,7 @@ export default function GetCurrentLocation() {
   })
     .then((location) => {
       console.log(location);
+      return location;
     })
     .catch((error) => {
       const {code, message} = error;

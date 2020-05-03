@@ -6,21 +6,21 @@ import AboutScreen from '_scenes/about';
 import ProductListScreen from '_scenes/productList';
 import ProductDetailsScreen from '_scenes/productDetails';
 
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
 
-function RootTabs() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="About" component={AboutScreen} />
-    </Tab.Navigator>
-  );
-}
+// function RootTabs() {
+//   return (
+//     <Tab.Navigator>
+//       <Tab.Screen name="Home" component={Home} />
+//       <Tab.Screen name="About" component={AboutScreen} />
+//     </Tab.Navigator>
+//   );
+// }
 
-function Home() {
+function Rootstack() {
   return (
-    <HomeStack.Navigator initialRouteName="Feed" headerMode="none">
+    <HomeStack.Navigator initialRouteName="Home">
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="ProductList" component={ProductListScreen} />
       <HomeStack.Screen
@@ -31,6 +31,6 @@ function Home() {
   );
 }
 
-const AppNavigator = RootTabs;
+const AppNavigator = Rootstack;
 
 export default AppNavigator;

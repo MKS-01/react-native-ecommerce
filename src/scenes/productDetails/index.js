@@ -8,6 +8,7 @@ import {
   Price,
   Button,
 } from '_styles/productDetails';
+// import CurrentLocation from '_components/location';
 
 const ProductDetails = ({route}) => {
   const {item} = route.params;
@@ -16,6 +17,7 @@ const ProductDetails = ({route}) => {
     <RootSafeAreaView>
       <RootScrollView>
         <RootView>
+          {/* <CurrentLocation /> */}
           <Card>
             <ImageView source={item.image} resizeMode="cover" />
           </Card>
