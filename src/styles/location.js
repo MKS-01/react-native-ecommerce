@@ -13,6 +13,12 @@ export const Container = styled.View`
 `;
 
 export const LocationText = styled.Text`
-  font-size: ${scaleFont(18)}px;
+  font-size: ${scaleFont(16)}px;
   font-weight: 500;
+  flex: 1;
+  flex-wrap: wrap;
+`;
+
+export const TextView = styled.Text`
+  flex-direction: row;
 `;
