@@ -1,5 +1,4 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {RootSafeAreaView, RootView, RootScrollView} from '_styles/RootView';
 import {
   Card,

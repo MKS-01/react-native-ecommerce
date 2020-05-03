@@ -9,12 +9,16 @@ import {
 } from '_styles/homeScreen';
 import Carousel from '_components/carousel';
 import {useNavigation} from '@react-navigation/native';
+import GetCurrentLocation from '_utils/GeoLocation';
+import CurrentLocation from '_components/location';
 
+GetCurrentLocation();
 const home = () => {
   return (
     <RootSafeAreaView>
       <RootScrollView>
         <RootView>
+          <CurrentLocation />
           <Container>
             <Carousel />
           </Container>
