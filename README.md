@@ -60,10 +60,10 @@ Errors comes while running iOS app due to duplicate of vector-icons fonts then f
 - Location : react-native-get-location
 
 <div>
-<img src="home.png" alt="Home" width="277" height="508">
-<img src="product_denim.png" alt="Product List" width="277" height="508">
+<img src="./screenshots/home.png" alt="Home" width="277" height="508">
+<img src="./screenshots/product_denim.png" alt="Product List" width="277" height="508">
 </div>
 
 <div>
-<img src="details_shoes.png" alt="Product Details" width="277" height="508">
+<img src="./screenshots/details_shoes.png" alt="Product Details" width="277" height="508">
 </div>
