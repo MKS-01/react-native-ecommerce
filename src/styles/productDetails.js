@@ -32,7 +32,7 @@ export const Description = styled.Text`
 `;
 
 export const Price = styled.Text`
-  font-size: ${scaleFont(18)}px;
+  font-size: ${scaleFont(20)}px;
   color: #424242;
   text-align: justify;
   font-weight: 700;

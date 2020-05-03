@@ -7,27 +7,30 @@ import {
   BuyButtonText,
 } from '_styles/product-card';
 import {useNavigation} from '@react-navigation/native';
+import {View} from 'react-native';
 
-const ProductCard = () => {
+const ProductCard = ({data}) => {
   const navigation = useNavigation();
+  const {item} = data;
+  // console.log('check', item);
   return (
-    <CardContainer
-      onPress={() => {
-        navigation.navigate('ProductDetails');
-      }}>
-      <ImageView
-        source={require('_assets/images/shoes.jpg')}
-        resizeMode="cover"
-      />
-      <ProductDesc>Shoes</ProductDesc>
-      <ProductDesc weight={'700'}>$200</ProductDesc>
-      <ProductDesc color={'grey'} size={12}>
-        added 2h ago
-      </ProductDesc>
-      <BuyButton>
-        <BuyButtonText>Buy Now</BuyButtonText>
-      </BuyButton>
-    </CardContainer>
+    <View>
+      <CardContainer
+        key={item.id}
+        onPress={() => {
+          navigation.navigate('ProductDetails', {item: item});
+        }}>
+        <ImageView source={item.image} resizeMode="cover" />
+        <ProductDesc>{item.title}</ProductDesc>
+        <ProductDesc weight={'700'}>{item.price}</ProductDesc>
+        <ProductDesc color={'grey'} size={12}>
+          added 2h ago
+        </ProductDesc>
+        <BuyButton>
+          <BuyButtonText>Buy Now</BuyButtonText>
+        </BuyButton>
+      </CardContainer>
+    </View>
   );
 };
 

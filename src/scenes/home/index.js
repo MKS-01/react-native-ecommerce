@@ -28,29 +28,35 @@ const home = () => {
   );
 };
 
+const categoryData = [
+  {
+    id: 1,
+    image: require('../../assets/images/category/adidas.jpg'),
+    type: 'shoes',
+  },
+  {
+    id: 2,
+    image: require('../../assets/images/category/levis.jpg'),
+    type: 'denim',
+  },
+];
+
 const Category = () => {
   const navigation = useNavigation();
 
   return (
     <CategoryContainer>
-      <CategoryCard
-        onPress={() => {
-          navigation.navigate('ProductList');
-        }}>
-        <ImageView
-          source={require('_assets/images/shoes.jpg')}
-          resizeMode="contain"
-        />
-      </CategoryCard>
-      <CategoryCard
-        onPress={() => {
-          navigation.navigate('ProductList');
-        }}>
-        <ImageView
-          source={require('_assets/images/jeans.jpg')}
-          resizeMode="stretch"
-        />
-      </CategoryCard>
+      {categoryData.map((item) => {
+        return (
+          <CategoryCard
+            key={item.id}
+            onPress={() => {
+              navigation.navigate('ProductList', {type: item.type});
+            }}>
+            <ImageView source={item.image} resizeMode="cover" />
+          </CategoryCard>
+        );
+      })}
     </CategoryContainer>
   );
 };

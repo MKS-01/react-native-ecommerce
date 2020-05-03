@@ -2,6 +2,7 @@ import React from 'react';
 import {FlatList} from 'react-native';
 import {RootSafeAreaView, RootView, RootScrollView} from '_styles/RootView';
 import ProductCard from '_components/product-card';
+import {shoesData} from './data';
 
 const DATA = [
   {
@@ -18,24 +19,30 @@ const DATA = [
   },
 ];
 
-const ProductList = () => {
+const ProductList = ({route}) => {
+  const {type} = route.params;
+
   return (
     <RootSafeAreaView>
       <RootView>
-        <List />
+        <List type={type} />
       </RootView>
     </RootSafeAreaView>
   );
 };
 
-function List() {
+const List = (props) => {
+  const {type} = props;
+
   return (
     <FlatList
-      data={DATA}
-      renderItem={({data}) => <ProductCard data={data} />}
+      // data={type === 'shoes' ? shoesData : DATA}
+      data={shoesData}
+      renderItem={(data) => <ProductCard data={data} />}
       keyExtractor={(data) => data.id}
+      showsVerticalScrollIndicator={false}
     />
   );
-}
+};
 
 export default ProductList;

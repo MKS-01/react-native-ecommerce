@@ -18,7 +18,7 @@ export const ImageView = styled.Image`
   width: ${scaleSize(80)}px;
   border-radius: ${scaleSize(80)}px;
   background-color: #fafafa;
-  margin: ${scaleSize(10)}px;
+  margin: ${scaleSize(10)}px ${scaleSize(10)}px ${scaleSize(10)}px 0;
 `;
 
 export const ImageText = styled.Text`
