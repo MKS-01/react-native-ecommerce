@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 import {Container, LocationText, TextView} from '_styles/location';
 import Icon from 'react-native-vector-icons/Entypo';
 import {scaleFont} from '_styles/mixins';
-import GetCurrentLocation from '_utils/GeoLocation';
+
 import GetLocation from 'react-native-get-location';
 
 const locationIcon = (
