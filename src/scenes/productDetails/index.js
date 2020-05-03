@@ -12,7 +12,7 @@ import {
 
 const ProductDetails = ({route}) => {
   const {item} = route.params;
-  console.log('check', item);
+
   return (
     <RootSafeAreaView>
       <RootScrollView>
