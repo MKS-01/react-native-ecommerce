@@ -11,7 +11,7 @@ export const Card = styled.TouchableOpacity`
 `;
 
 export const ImageView = styled.Image`
-  height: ${scaleSize(200)}px;
+  height: ${scaleSize(250)}px;
   width: 100%;
 `;
 

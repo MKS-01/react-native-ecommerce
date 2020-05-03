@@ -20,8 +20,7 @@ const ProductDetails = ({route}) => {
           <Card>
             <ImageView source={item.image} resizeMode="cover" />
           </Card>
-          {/* <Conat> */}
-          <Title align={'left'}>Shoes</Title>
+          <Title align={'left'}>{item.title}</Title>
           <Description>{item.desc}</Description>
           <Price>{item.price}</Price>
           <Button>
